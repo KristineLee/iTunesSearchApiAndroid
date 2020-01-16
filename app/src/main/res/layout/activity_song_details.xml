@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryBlack">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryBlack">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/song_details"
+            android:layout_width="match_parent"
+            android:layout_height="165dp"
+            android:background="@color/colorGreyBackground">
+
+            <ImageView
+                android:id="@+id/song_details_track_genre_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:src="@drawable/ic_music_icon"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintRight_toLeftOf="@+id/song_details_track_genre"/>
+
+            <TextView
+                android:id="@+id/song_details_track_genre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:textColor="@color/colorAccent"
+                android:textSize="14sp"
+                app:layout_constraintLeft_toRightOf="@+id/song_details_track_genre_icon"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="12-12-2017" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="4dp"
+                android:layout_marginRight="4dp"
+                android:layout_marginTop="16dp"
+                android:src="@drawable/ic_date_image"
+                app:layout_constraintRight_toLeftOf="@+id/song_details_release_date"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/song_details_release_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="14dp"
+                android:layout_marginRight="14dp"
+                android:layout_marginTop="16dp"
+                android:textColor="@color/colorWhite"
+                android:textSize="14sp"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="12-12-2017" />
+
+            <ImageView
+                android:id="@+id/song_details_image"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:src="@drawable/ic_launcher_foreground"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/song_details_release_date" />
+
+            <TextView
+                android:id="@+id/song_details_track_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="14dp"
+                android:layout_marginStart="14dp"
+                android:layout_marginTop="16dp"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:textColor="@android:color/white"
+                android:textSize="22sp"
+                app:layout_constraintLeft_toRightOf="@+id/song_details_image"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/song_details_release_date"
+                tools:text="Rap God" />
+
+            <TextView
+                android:id="@+id/song_details_artist_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="14dp"
+                android:layout_marginStart="14dp"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                app:layout_constraintLeft_toRightOf="@+id/song_details_image"
+                app:layout_constraintTop_toBottomOf="@+id/song_details_track_name"
+                tools:text="Eminem" />
+
+            <TextView
+                android:id="@+id/song_details_track_Price"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="14dp"
+                android:layout_marginStart="14dp"
+                android:textColor="@color/colorAccent"
+                android:textSize="14sp"
+                app:layout_constraintLeft_toRightOf="@+id/song_details_image"
+                app:layout_constraintTop_toBottomOf="@+id/song_details_artist_name"
+                tools:text="$10.00" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimaryBlack"
+            android:orientation="vertical"
+            android:padding="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/song_details"
+            app:layout_constraintLeft_toLeftOf="@+id/song_details">
+
+            <TextView
+                android:id="@+id/song_details_long_description_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:textColor="@color/colorWhite"
+                android:textSize="18dp"
+                android:text="Song Descriptions : "/>
+
+            <TextView
+                android:id="@+id/song_details_long_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:textColor="@color/colorWhite"
+                android:textSize="16dp"
+                app:layout_constraintTop_toBottomOf="@+id/song_details_long_description_title"
+                app:layout_constraintLeft_toLeftOf="@+id/song_details_long_description_title"/>
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
