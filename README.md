@@ -8,7 +8,7 @@ With the app, you can:
 
 * Display the list from https://itunes.apple.com/search?term=star&amp;country=au&amp;media=movie&amp;all 
 * Display the Song Image, Track Name, Artist Name, Track Genre and Track Price when in list view.
-* Display the Song Image, Track Name, Artist Name, Track Genre and Track Price, Release Daate and Long Description when in list details view.Get details about the track
+* Display the Song Image, Track Name, Artist Name, Track Genre and Track Price, Release Date and Long Description when in list details view.
 * Inform user the last date he/she visited the application.
 * Inform user if there is No Internet Connection.
 
