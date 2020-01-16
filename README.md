@@ -25,7 +25,3 @@ With the app, you can:
 <img style="margin-left:10px;" src="screenshots/Screenshot2.jpg" width="29%" >
 <img style="margin-left:10px;" src="screenshots/Screenshot3.jpg" width="29%" >
 <img style="margin-left:10px;" src="screenshots/Screenshot4.jpg" width="29%" >
-
-## License
-
-This project is licensed under the Apache License - see the [LICENSE.md](LICENSE.md) file for details
